@@ -5,7 +5,7 @@ My attempt at  [100 Days CSS Challenge](https://100dayscss.com/).
 [Here are my solutions](https://khalidmahamud.github.io/100_Days_CSS_Challange_Solution/).
 
 # Demo
-    - The challanges:
+- The Challanges:
 
 * [001 - Title](https://c0d3ph1l1c.github.io/100DaysCSS/001Title/)
 * [002 - Menu Icon](https://c0d3ph1l1c.github.io/100DaysCSS/002MenuIcon/)
