@@ -1,0 +1,217 @@
+:root {
+    --sky: #7ddffc;
+    --ground: #f0de75;
+    --main-black: #272c34;
+    --sun: #ffef00;
+    --pyramide-right: #dadada;
+    --pyramide-left: #f4f4f4;
+    --shadow: rgba(0, 0, 0, 0.2);
+}
+
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--main-black);
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.sky {
+    width: 100%;
+    height: 68%;
+    background-color: var(--sky);
+}
+
+.ground {
+    width: 100%;
+    height: 32%;
+    background-color: var(--ground);
+}
+
+.sun {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--sun);
+    position: absolute;
+    top: 10px;
+    left: 73px;
+    transform: rotate(-70deg);
+    transform-origin: 40% 370%;
+    animation: sun-rotation 4s linear infinite;
+}
+
+.pyramide-left {
+    width: 116px;
+    height: 57px;
+    background-color: var(--pyramid-left);
+    position: absolute;
+    top: 65px;
+    left: 31px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    z-index: 0;
+    animation: left-pyramide-shading 4s linear infinite;
+}
+
+.pyramide-right {
+    width: 117px;
+    height: 57px;
+    background-color: var(--pyramide-right);
+    position: absolute;
+    top: 65px;
+    left: 31px;
+    clip-path: polygon(50% 0%, 65% 100%, 100% 100%);
+    z-index: 1;
+    animation: right-pyramide-shading 4s linear infinite;
+}
+
+.shadow {
+    position: absolute;
+    top: 122px;
+    left: -48%;
+    height: 30px;
+    width: 360px;
+    background-color: var(--shadow);
+    clip-path: polygon(115px 0%, 231px 0%, 100% 100%);
+    transform-origin: 50% 0;
+    animation: pyramide-shadow 4s linear infinite;
+}
+
+.dark {
+    background-color: var(--main-black);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    left: 0;
+    animation: dark 4s linear infinite;
+}
+
+@keyframes dark {
+    0% {
+        background: var(--main-black);
+    }
+
+    30% {
+        background: transparent;
+    }
+
+    70% {
+        background: transparent;
+    }
+
+    100% {
+        background: var(--main-black);
+    }
+}
+
+@keyframes sun-rotation {
+    0% {
+        transform: rotate(-70deg);
+    }
+
+    25% {
+        transform: rotate(-35deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(35deg);
+    }
+
+    100% {
+        transform: rotate(70deg);
+    }
+}
+
+@keyframes left-pyramide-shading {
+    0% {
+        background: var(--pyramide-left);
+    }
+
+    30% {
+        background: var(--pyramide-left);
+    }
+
+    70% {
+        background: var(--pyramide-right);
+    }
+
+    100% {
+        background: var(--shadow);
+    }
+}
+
+@keyframes right-pyramide-shading {
+    0% {
+        background: var(--shadow);
+    }
+
+    30% {
+        background: var(--pyramide-right);
+    }
+
+    70% {
+        background: var(--pyramide-left);
+    }
+
+    100% {
+        background: var(--pyramide-left);
+    }
+}
+
+@keyframes pyramide-shadow {
+    0% {
+        transform: scaleY(0);
+        clip-path: polygon(115px 0%, 231px 0%, 100% 100%);
+    }
+    25% {
+        transform: scaleY(.8);
+        clip-path: polygon(115px 0%, 231px 0%, 80% 100%);
+    }
+    50% {
+        transform: scaleY(.5);
+    } 
+    75% {
+        transform: scaleY(.8);
+    }
+    100% {
+        transform: scaleY(0);
+        clip-path: polygon(115px 0%, 231px 0%, 0% 100%);
+    }
+}

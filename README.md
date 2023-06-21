@@ -10,7 +10,7 @@ My attempt at  [100 Days CSS Challenge](https://100dayscss.com/).
 * [001 - Title](https://c0d3ph1l1c.github.io/100DaysCSS/001Title/)
 * [002 - Menu Icon](https://c0d3ph1l1c.github.io/100DaysCSS/002MenuIcon/)
 * [003 - The Pyramide](https://c0d3ph1l1c.github.io/100DaysCSS/003ThePyramide/)
-* [004 - Loading](https://c0d3ph1l1c.github.io/100DaysCSS/004Loading/)
+<!-- * [004 - Loading](https://c0d3ph1l1c.github.io/100DaysCSS/004Loading/)
 * [005 - Statistic](https://c0d3ph1l1c.github.io/100DaysCSS/005Statistic/)
 * [006 - Profile](https://c0d3ph1l1c.github.io/100DaysCSS/006Profile/)
 * [007 - Notifications, Search and Menu](https://c0d3ph1l1c.github.io/100DaysCSS/007NotificationsSearchAndMenu/)
@@ -106,4 +106,4 @@ My attempt at  [100 Days CSS Challenge](https://100dayscss.com/).
 * [097 - Puppet](https://c0d3ph1l1c.github.io/100DaysCSS/097Puppet/)
 * [098 - Plopp](https://c0d3ph1l1c.github.io/100DaysCSS/098Plopp/)
 * [099 - Icon Animation](https://c0d3ph1l1c.github.io/100DaysCSS/099IconAnimation/)
-* [100 - Neon Light](https://c0d3ph1l1c.github.io/100DaysCSS/100NeonLight/)
+* [100 - Neon Light](https://c0d3ph1l1c.github.io/100DaysCSS/100NeonLight/) -->
