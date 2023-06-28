@@ -60,13 +60,13 @@ html {
 }
 
 .right {
-    flex-basis: 40%;
+    flex-basis: 42%;
 }
 
 .stats {
     width: 100%;
     background-color: #F5E8DF;
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -76,8 +76,13 @@ html {
     transition: .4s ease-in-out;
 }
 
+.stats:first-child {
+    border-radius: 0 7px 0 0;
+}
+
 .stats:last-of-type {
     border: none;
+    border-radius: 0 0 7px 0;
 }
 
 .stats:hover {
